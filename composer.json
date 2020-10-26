@@ -1,0 +1,43 @@
+{
+  "name": "enius/whereby",
+  "description": "PHP Library based on Guzzle to consume Whereby.com API",
+  "type": "library",
+  "keywords": [
+    "whereby",
+    "api",
+    "guzzle"
+  ],
+  "require": {
+    "php": ">=7.2.0",
+    "guzzlehttp/guzzle": "^6.0|^7.0",
+    "ext-json": "*",
+    "symfony/serializer": "^3.0|^4.0|^5.0",
+    "symfony/property-access": "^3.0|^4.0|^5.0"
+  },
+  "require-dev": {
+    "symfony/dotenv": "^3.0|^4.0|^5.0",
+    "symfony/var-dumper": "^3.0|^4.0|^5.0",
+    "phpunit/phpunit": "^8.5"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Johnny J. Huirilef Millán",
+      "email": "johnny@codelovers.cl"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "Enius\\Whereby\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Enius\\Whereby\\Test\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit tests"
+  }
+}
